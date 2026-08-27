@@ -11,12 +11,11 @@ st.title("AI Spam Shield")
 st.write("Enter an SMS below to check whether it is Spam or Ham.")
 
 df = pd.read_csv(
-    r"C:\Users\DELL\OneDrive\Desktop\spam_detector\sms+spam+collection\SMSSpamCollection",
+    "SMSSpamCollection",
     sep="\t",
     header=None,
     names=["label", "message"]
 )
-
 x = df["message"]
 y = df["label"]
 
